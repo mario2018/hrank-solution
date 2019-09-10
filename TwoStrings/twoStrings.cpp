@@ -7,7 +7,7 @@ using namespace std;
 // Complete the twoStrings function below.
 string twoStrings(string s1, string s2) {
     vector<int> freq(26);
-    // range-based for loop is a C++11 extension(g++ -std=c++11 ...cpp)
+    // range-based for loop is a C++11 extension(g++ -std=c++11 twoStrings.cpp)
     for(char c : s1) {++freq[c - 'a'];}
     for(char c : s2) {
         int i = c - 'a';
